@@ -22,7 +22,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height) style:UITableViewStylePlain];
+    tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 64, self.view.frame.size.width, self.view.frame.size.height) style:UITableViewStylePlain];
     tableView.delegate = self;
     tableView.dataSource = self;
     tableView.contentInset = UIEdgeInsetsMake(200, 0, 0, 0);
@@ -34,7 +34,7 @@
     
     array = @[@"12",@"233",@"342",@"234"];
     
-    headerView = [[HeaderView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 200)];
+    headerView = [[HeaderView alloc] initWithFrame:CGRectMake(0, 64, self.view.frame.size.width, 200)];
     UIImageView *img =[[UIImageView alloc]init];
     img.contentMode = UIViewContentModeScaleAspectFill;
     img.image =[UIImage imageNamed:@"user-background-320"];
@@ -58,7 +58,7 @@
     {
         CGPoint offset = [change[NSKeyValueChangeNewKey] CGPointValue];
        
-        if (offset.y <= 0 && -offset.y >= 64) {
+        if (offset.y <= 0 && -offset.y >= 200) {
             
             CGRect newFrame = CGRectMake(0, 0, self.view.frame.size.width, -offset.y);
             headerView.frame = newFrame;
@@ -67,9 +67,9 @@
                 tableView.contentInset = UIEdgeInsetsMake(-offset.y, 0, 0, 0);
             }
         } else {
-            CGRect newFrame = CGRectMake(0, 0, self.view.frame.size.width, 64);
-            headerView.frame = newFrame;
-            tableView.contentInset = UIEdgeInsetsMake(64, 0, 0, 0);
+//            CGRect newFrame = CGRectMake(0, 0, self.view.frame.size.width, 64);
+//            headerView.frame = newFrame;
+//            tableView.contentInset = UIEdgeInsetsMake(64, 0, 0, 0);
         }
     }
 }

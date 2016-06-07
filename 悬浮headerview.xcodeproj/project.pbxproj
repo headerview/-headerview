@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40D011E61D066CD900420478 /* TestTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D011E51D066CD900420478 /* TestTableViewController.m */; };
 		40DEB06E1D05020B00D00B2E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DEB06D1D05020B00D00B2E /* main.m */; };
 		40DEB0711D05020B00D00B2E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DEB0701D05020B00D00B2E /* AppDelegate.m */; };
 		40DEB0741D05020B00D00B2E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40DEB0731D05020B00D00B2E /* ViewController.m */; };
@@ -46,6 +47,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		40D011E41D066CD900420478 /* TestTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTableViewController.h; sourceTree = "<group>"; };
+		40D011E51D066CD900420478 /* TestTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTableViewController.m; sourceTree = "<group>"; };
 		40DEB0691D05020B00D00B2E /* 悬浮headerview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "悬浮headerview.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		40DEB06D1D05020B00D00B2E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		40DEB06F1D05020B00D00B2E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -151,6 +154,8 @@
 				40DEB06C1D05020B00D00B2E /* Supporting Files */,
 				40DEB09F1D05023B00D00B2E /* HeaderView.h */,
 				40DEB0A01D05023B00D00B2E /* HeaderView.m */,
+				40D011E41D066CD900420478 /* TestTableViewController.h */,
+				40D011E51D066CD900420478 /* TestTableViewController.m */,
 			);
 			path = "悬浮headerview";
 			sourceTree = "<group>";
@@ -355,6 +360,7 @@
 				40DEB0C81D05092600D00B2E /* View+MASAdditions.m in Sources */,
 				40DEB0711D05020B00D00B2E /* AppDelegate.m in Sources */,
 				40DEB06E1D05020B00D00B2E /* main.m in Sources */,
+				40D011E61D066CD900420478 /* TestTableViewController.m in Sources */,
 				40DEB0C01D05092600D00B2E /* MASCompositeConstraint.m in Sources */,
 				40DEB0C71D05092600D00B2E /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 			);
